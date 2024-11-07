@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/milangas-app/static/css/main.21234692.css",
+    "main.js": "/milangas-app/static/js/main.fd68a801.js",
+    "static/js/453.57938e81.chunk.js": "/milangas-app/static/js/453.57938e81.chunk.js",
+    "static/media/milanga.jpg": "/milangas-app/static/media/milanga.b968872a728df4540187.jpg",
+    "static/media/Proximamente.png": "/milangas-app/static/media/Proximamente.d07492f9e867224a1bb5.png",
+    "index.html": "/milangas-app/index.html",
+    "main.21234692.css.map": "/milangas-app/static/css/main.21234692.css.map",
+    "main.fd68a801.js.map": "/milangas-app/static/js/main.fd68a801.js.map",
+    "453.57938e81.chunk.js.map": "/milangas-app/static/js/453.57938e81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21234692.css",
+    "static/js/main.fd68a801.js"
+  ]
+}
