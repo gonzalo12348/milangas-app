@@ -1,0 +1,162 @@
+/* ProductDetail.css */
+
+.product-detail {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* flex-direction: column; */
+}
+
+.back-button {
+    background-color: transparent;
+    border: 2px solid #28a745 ;
+    font-size: 18px;
+    color: #28a745;
+    cursor: pointer;
+    padding: 10px 15px;
+    /* margin-bottom: 10px; */
+    margin: 10px;
+    margin-left: 18vw;
+    align-self: center;
+    transition: color 0.3s;
+}
+
+.back-button:hover {
+    color: #218838;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.product-image {
+    height: 65vh;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.details-container {
+    flex: 2;
+    text-align: left;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.nutrition, .ingredients {
+    margin: 20px 0;
+}
+
+.nutrition h2, .ingredients h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.nutrition-list, .ingredients-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.nutrition-list li, .ingredients-list li {
+    background-color: #f9f9f9;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.order-section {
+    margin-top: 20px;
+}
+
+.input {
+    width: 80px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+/* Sticky button at the bottom of the screen */
+.order-section-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.order-section-fixed .button {
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .back-button{
+        margin: 10px;
+        width: 95%;
+    }
+    .image-container, .details-container {
+        width: 100%;
+    }
+
+    .product-image {
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .nutrition-list, .ingredients-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-section {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .order-section .button {
+        margin-top: 12px;
+        width: 100%;
+    }
+}
